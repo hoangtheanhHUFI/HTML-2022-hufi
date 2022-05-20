@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>BT3</title>
+</head>
+<style>
+	#box{
+		width: 200px;
+		height: 100px;
+		background-color: lightgreen;
+		border-radius: 20px;
+		margin: auto;
+		box-shadow: 0 0 15px grey;
+	}
+	#text{
+		margin: auto;
+		text-align: center;
+		padding-top: 30px;
+		font-size: 30px;
+	}
+	</style>
+	<script>
+		function funIn(){
+			document.getElementById("box").style.height="200px";
+			document.getElementById("box").style.width="400px";
+			
+		}function funOut(){
+			document.getElementById("box").style.height="100px";
+			document.getElementById("box").style.width="200px";
+			
+		}
+	</script>
+	
+<body>
+	<div id="box" onMouseMove="funIn()" onMouseOut="funOut()" ><p id="text">CSS</p></div>
+</body>
+</html>

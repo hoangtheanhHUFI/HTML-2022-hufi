@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>BT4</title>
+</head>
+<style>
+	#img1,#img3,#img2{ 
+		opacity:0.5;
+	}
+	</style>
+<script>
+	function fun(){
+		document.getElementById("img1").style.opacity="1";
+		document.getElementById("img2").style.opacity="1";
+		document.getElementById("img3").style.opacity="1";
+	}
+	function fun2(){
+		document.getElementById("img1").style.opacity="0.5";
+		document.getElementById("img2").style.opacity="0.5";
+		document.getElementById("img3").style.opacity="0.5";
+	}
+	</script>
+<body>
+	<div>
+		<h1>Minh hoa Opacity</h1>
+	<table  cellspacing="5">
+		<tr>
+			<td onMouseOut="fun()" onMouseOver="fun2()" id="img1"><img alt="hanoi" src="Ha Noi.JPG" width="350px" height="250px"></td>
+			<td  onMouseOut="fun()" onMouseOver="fun2()" id="img2"><img alt="hanoi2" src="Ha Noi.JPG" width="350px" height="250px"></td>
+			<td  onMouseOut="fun()" onMouseOver="fun2()" id="img3"><img alt="hanoi3" src="Ha Noi.JPG" width="350px" height="250px"></td>
+		</tr>
+	</table>
+	</div>
+</body>
+</html>

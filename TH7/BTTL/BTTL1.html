@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>BTTL1</title>
+</head>
+<style>
+	.Flip,#Panel{
+		height: 50px;
+		font-size: 16px;
+		background-color: #4CAF50;
+		color: white;
+		text-align: center;
+		margin: auto;
+		border:solid #a6d8a8;
+	}
+	#Panel{
+		display: none;
+	}
+	</style>
+<script>
+	function funt(){ document.getElementById("Panel").style.display = "Block";}
+	</script>
+<body>
+	<p class="Flip" onClick="funt()">Click to show detail</p>
+	<div id="Panel">Hello Kitties</div>
+</body>
+</html>

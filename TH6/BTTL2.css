@@ -1,0 +1,15 @@
+/* CSS Document */
+#wraper { 
+	width: 960px;
+	margin: auto;
+	border: 1px solid black;
+	height: 600px;
+}
+#Up{
+	height: 30%;
+	background: green;
+}
+#Down{
+	height: 70%;
+	background: blue;
+}
