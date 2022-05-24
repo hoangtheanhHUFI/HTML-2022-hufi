@@ -22,46 +22,35 @@
         margin-right: 50px;
         border: 1px solid black;
     }
-    #button1{
-        color: #222121;
-        position: relative;
-        width: 150px;
-        height: 50px;
-        border: 1px;
-        background: rgb(252, 193, 193);
-        border-radius: 30px;
-        float: left;
+    .nav {
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  float: right;
+  
+}
 
-    }
-    #button2{
-    color: #222121;
-    position: relative;
-    width: 150px;
-    height: 50px;
-    border-radius: 30px;
-    background: #F0ECEC;
-    clear: both;
-    margin: auto;
-
-    }
-    #button3{
-        color: #222121;
-        width: 150px;
-        height: 50px;
-        border: 1px;
-        background: rgb(252, 193, 193);
-        border-radius: 30px;
-        float: right;
-    }
+.nav li {
+    background: white;
+  display: inline-block;
+  border: 1px solid white;
+  font-size: 40px;
+  padding: 20px;
+  border-radius: 40px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
 </style>
 <body>
 <div class="Container">
-    <h3>Loren IS SPUm</h3>
-    <div class="rightMenu">
-        <div id="button1">Home</div>
-        <div id="button2">Sneaker</div>
-        <div id="button3">About Us</div>
-    </div>
+    <ul class="nav">
+        <li><a href="#home">Home</li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#clients">Our Clients</a></li>  
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+      
 </div>
 </body>
 <footer></footer>
