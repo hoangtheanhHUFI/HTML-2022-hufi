@@ -21,13 +21,17 @@
   margin: 0;
   padding: 0;
   float: right;
-  
+  color: white;
 }
-
+a:link {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    text-decoration: none;
+  }
 .nav li {
     font-family: Inter;
     color: #222121;
-    background: white;
+    background: rgb(58, 57, 57);
   display: inline-block;
   border: 1px solid white;
   font-size: 40px;
