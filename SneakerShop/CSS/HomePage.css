@@ -1,5 +1,45 @@
-#Container{
-    width: 900px;
-    background-color: aqua;
-    border: 1px solid black;
+
+.Container{
+        margin : auto;
+        background-color: #E5E5E5;
+        border: none;
+        width: 1920px;
+        height: 1080px;
+    }
+.rightMenu{
+        color: #222121;
+        color: #E5E5E5;
+        font-size: 30px;
+        float: right;
+        width: 30%;
+        margin-right: 50px;
+        border: 1px solid black;
+    }
+.nav {
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  float: right;
+  
+}
+
+.nav li {
+    font-family: Inter;
+    color: #222121;
+    background: white;
+  display: inline-block;
+  border: 1px solid white;
+  font-size: 40px;
+  padding: 20px;
+  border-radius: 40px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+img {
+    margin-top: 220px;
+}
+@font-face {
+    font-family: Inter;
+    src: url(../Font/Inter-ExtraBold.ttf);
 }
