@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Form 1 (GET)</title>
+</head>
+<style>
+    form{
+        border: 1px solid gray;
+        border-radius: 10px;
+        width: 50%;
+        margin: 0 auto;
+    }
+    table{
+        margin: 0 auto;
+    }
+    th{
+        background-color: gray;
+    }
+    input {
+       margin-left: 30px;
+    }
+</style>
+<script>
+    function Xuatthongtin()
+    {
+        document.getElementById("NameRcv").innerHTML = document.forms["F1"]["NameSender"].value;
+        sessionStorage.setItem()
+    }
+</script>
+<body>
+    <form class="form" name="F1" method="get">
+        <table>
+            <th colspan="2">THÔNG TIN NGƯỜI GỬI</th>
+            <tr>
+                <td>Người gửi: </td>
+                <td><input type="text" placeholder="Nhập thông tin người gửi" id="NameSender" name="NameSender"/></td>
+            </tr>
+            <tr>
+                <td>Emails Người gửi:  </td>
+                <td><input type="text" placeholder="Nhập thông tin Email" id="MailSender" name="MailSender"/></td>
+            </tr>
+            <tr>
+                <td>Phone:  </td>
+                <td><input type="text" placeholder="Nhập thông tin Phone" id="PhoneSender" name="PhoneSender"/></td>
+            </tr>
+        </table>
+    </form>
+    <form class="form" name="F2" method="get">
+        <table>
+            <th colspan="2">THÔNG TIN NGƯỜI NHẬN</th>
+            <tr>
+                <td>Người Nhận: </td>
+                <td><input type="text" placeholder="Nhập thông tin người nhận"  size="50" id="NameRcv" name="NameRcv"/></td>
+            </tr>
+            <tr>
+                <td>Emails người nhận:  </td>
+                <td><input type="text" placeholder="Nhập thông tin Email người nhận" size="50" id="MailRcv" name="MailRcv"/></td>
+            </tr>
+            <tr>
+                <td>Phone người nhận:  </td>
+                <td><input type="text" placeholder="Nhập thông tin Phone người nhận" size="50" id="PhoneRcv" name="PhoneRcv"/></td>
+            </tr>
+            <tr>
+				<td>Thành phố người nhận:</td>
+				<td><select name="CityRcv" id="CityRcv" >
+					<option value="0">TP HỒ CHÍ MINH</option>
+					<option value="2">HÀ NỘI</option>
+					<option value="3">ĐÀ NẴNG</option>
+					<option value="4">THỪA THIÊN-HUẾ</option>
+					</select></td>
+			</tr>
+        </table>
+        <center><input type="button" value="Gửi thông tin" onclick="Xuatthongtin()"/></center>
+    </form>
+</body>
+</html>
