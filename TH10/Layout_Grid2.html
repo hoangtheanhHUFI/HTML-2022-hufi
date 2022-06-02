@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Layout Grid 2 </title>
+</head>
+<style>
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+        grid-gap: 10px;
+        background-color: #2196F3;
+        padding: 10px;
+    }
+    .grid-container div {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        padding: 20px 0 ;
+        font-size: 30px;
+    }
+   .Header{
+        grid-column: 1 / span 10;
+        grid-row: 1;
+   }
+   .Link{
+        grid-column: 1 / span 10;
+        grid-row: 2/ span 1;
+   }
+   .Menu{
+        grid-column: 1 / span 2;
+        grid-row: 3 / span 3;
+   }
+   .Content
+   {
+        grid-column: 3 / span 5;
+        grid-row: 4 / span 1;
+   }
+   .Right{
+        grid-column: 8 / span 3 ;
+        grid-row: 3 / span 3;
+
+   }
+   .SubFooter{
+        grid-column: 3 / span 5;
+        grid-row: 5 ;
+   }
+   .Footer{
+        grid-column: 1 / span 10 ;
+        grid-row: 6;
+   }
+
+
+
+</style>
+<body>
+   <div class="grid-container">
+        <div class="Header">Header</div>
+        <div class="Link">Link</div>
+        <div class="Content">Content<br>Content<br>Content<br>Content<br>Content<br>Content<br>Content</div>
+        <div class="SubFooter">Sub Footer</div>
+        <div class="Menu">Menu</div>
+        <div class="Right">Right</div>
+        <div class="Footer">Footer</div>
+   </div>
+</body>
