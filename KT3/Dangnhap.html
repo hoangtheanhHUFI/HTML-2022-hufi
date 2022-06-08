@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Kiem tra 3 Hoang The Anh</title>
+</head>
+<script>
+    function kiemtra() 
+    {
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(LoginForm1.email.value))
+    {
+        window.open("bai2.html")
+    }
+        document.getElementById("warning1").style.display = "Block";
+        document.LoginForm1.email.focus();
+        
+    }
+</script>
+<style>
+    body {
+      background-image: url("Source/bg_img.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;  
+      background-size: cover;
+    }
+    .loginform{
+        width: 300px;
+        background-color: rgb(255, 255, 255);
+        float: right;
+        margin-right: 150px;
+        margin-top: 300px;
+        border-radius: 10px;
+    }
+    #logo{
+        margin-left: 10px;
+    }
+    #title_loginform{
+        color: blue;
+        margin: auto;
+    }
+    ::placeholder{
+        font-size: 1.2em;
+        font-style: italic;
+    }
+    input{
+        background: rgb(233, 233, 233);
+        height: 30px;
+        
+    }
+    button{
+        height: 30px;
+        width: 200px;
+        background: rgb(126, 157, 241);
+    }
+    #warning1{
+        color: red;
+        font-style: italic;
+        display: none;
+    }
+    </style>
+<body>
+<div class="loginform">
+    <form class="form" name="LoginForm1" method="get">
+        <table>
+            <img id="logo" alt="logo" src="Source\logo.png">
+            <th id="title_loginform" colspan="2">ĐĂNG NHẬP HỆ THỐNG</th>
+            <tr>
+                <tr>
+                    <td><h3>Email</h3></td>
+                </tr>
+                <td><input type="text" placeholder="Nhập email" id="email" name="email"/> <p id="warning1">Bạn đã nhập Email không đúng định dạng</p></td>
+               
+            </tr>
+            <tr>
+                <tr>
+                    <td><h3>Password</h3></td>
+                </tr>
+                <td><input type="password" placeholder="Nhập password" id="password" name="password"/></td>
+            </tr>
+        </table>
+        <center><button onclick="kiemtra()">ĐĂNG NHẬP</button></center>
+    </form>
+</div>
+</body>
+</html>
